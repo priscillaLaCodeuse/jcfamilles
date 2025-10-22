@@ -1,0 +1,43 @@
+#services {
+  .intro {
+    padding-bottom: 0;
+  }
+  .services {
+    .service {
+      display: grid;
+      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px $blackShadow;
+      }
+
+      p {
+        padding-bottom: 30px;
+      }
+    }
+    .right {
+      grid-template-columns: 40% 60%;
+
+      div {
+        &:last-of-type {
+          padding: 50px 20px;
+        }
+      }
+    }
+    .left {
+      grid-template-columns: 60% 40%;
+      div {
+        &:first-of-type {
+          padding: 50px 20px;
+        }
+      }
+    }
+  }
+}

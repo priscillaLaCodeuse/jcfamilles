@@ -1,0 +1,32 @@
+#legal {
+  .legal {
+    text-align: justify;
+
+    em {
+      padding-bottom: 20px;
+    }
+    h2 {
+      padding: 20px 0;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 10%;
+        height: 2px;
+        border-bottom: 2px solid $color1;
+        padding-top: 20px;
+        margin: 0 0 20px 0;
+      }
+    }
+
+    a {
+      color: $color1;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

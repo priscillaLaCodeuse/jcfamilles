@@ -1,0 +1,21 @@
+.title-page {
+  width: 100%;
+  box-shadow: 0 0 10px $blackShadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg-title.webp) center/cover;
+  padding: 0;
+
+  .title {
+    width: 100%;
+    padding: 50px 0;
+    background: $whiteShadow;
+    h1 {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      color: $white;
+      text-shadow: 0 0 10px $black;
+    }
+  }
+}

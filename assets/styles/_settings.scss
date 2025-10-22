@@ -1,0 +1,69 @@
+//fonts
+
+@font-face {
+  font-family: "open-sans-regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "open-sans-semi-bold";
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+$font1: "open-sans-regular", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$font2: "open-sans-semi-bold", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #00adef;
+$color2: #80cc28;
+$black: #000;
+$white: #fff;
+$gray: #f1f1f1;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+$text: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: $color1;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    border-bottom: 2px solid $color1;
+    padding-top: 20px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+p {
+  line-height: 25px;
+}
+
+a {
+  font-weight: normal;
+}

@@ -1,0 +1,93 @@
+footer {
+  box-shadow: 0 0 5px $blackShadow;
+
+  .containerFooter {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: top;
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+    div {
+      padding: 20px;
+
+      @media screen and (max-width: 1000px) {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+
+        &::after {
+          width: 30%;
+          margin: 0 0 20px 0;
+          padding-top: 10px;
+
+          @media screen and (max-width: 1000px) {
+            margin: 0 auto 20px;
+            width: 10%;
+          }
+        }
+      }
+
+      ul {
+        li {
+          padding-bottom: 10px;
+          list-style-type: square;
+          margin-left: 20px;
+
+          @media screen and (max-width: 1000px) {
+            margin-left: 0;
+            list-style: none;
+          }
+
+          a {
+            text-decoration: none;
+            color: $black;
+            transition: 0.2s;
+          }
+
+          &:hover {
+            color: $color1;
+
+            a {
+              color: $color1;
+            }
+          }
+        }
+      }
+    }
+
+    .logoFooter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    background: $color1;
+    padding: 20px 0;
+    text-align: center;
+
+    p,
+    a {
+      color: $white;
+      font-family: $font2;
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

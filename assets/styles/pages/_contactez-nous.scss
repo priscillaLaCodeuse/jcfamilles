@@ -1,0 +1,131 @@
+#contactezNous {
+  .intro {
+    padding-bottom: 0;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-coordonnees {
+      box-shadow: 0 0 10px $blackShadow;
+      padding: 50px 20px;
+      border-radius: 20px;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 1250px) {
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 750px) {
+        box-shadow: 0 0 10px $blackShadow;
+        padding: 50px 20px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+
+      .containerCoordonnees {
+        @media screen and (max-width: 1250px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+        }
+
+        @media screen and (max-width: 1250px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+        }
+        @media screen and (max-width: 750px) {
+          grid-template-columns: 1fr;
+        }
+
+        div {
+          @media screen and (max-width: 1250px) {
+            box-shadow: 0 0 10px $blackShadow;
+            padding: 20px;
+            border-radius: 20px;
+          }
+
+          @media screen and (max-width: 750px) {
+            box-shadow: none;
+            padding: 0;
+            border-radius: 0;
+          }
+
+          i {
+            display: block;
+            font-size: 2rem;
+            color: $color1;
+            margin: 20px auto;
+            border: 3px solid $color1;
+            padding: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 360px;
+          }
+
+          h3 {
+            padding-bottom: 20px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .contact-form {
+      box-shadow: 0 0 10px $blackShadow;
+      padding: 50px 20px;
+      border-radius: 20px;
+      margin-bottom: 50px;
+
+      form {
+        justify-content: center;
+        label {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+
+          input,
+          textarea {
+            width: 80%;
+            display: block;
+            margin: 10px auto 20px;
+            text-align: center;
+            padding: 5px 10px;
+            outline-color: $color1;
+          }
+        }
+
+        button {
+          border: none;
+          transition: 0.2s;
+          margin-top: 10px;
+          font-size: 1rem;
+          text-decoration: none;
+          background: $color1;
+          border-radius: 50px;
+          padding: 10px 20px;
+          color: $white;
+
+          &:hover {
+            transform: scale(1.1);
+            color: $white;
+            box-shadow: 0 0 5px $blackShadow;
+            background: $color2;
+          }
+        }
+      }
+    }
+  }
+}

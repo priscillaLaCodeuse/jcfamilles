@@ -1,0 +1,46 @@
+#recrutement {
+  .formRecrutement {
+    box-shadow: 0 0 10px $blackShadow;
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+    form {
+      justify-content: center;
+      label {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+
+        input,
+        textarea {
+          width: 80%;
+          display: block;
+          margin: 10px auto 20px;
+          text-align: center;
+          padding: 5px 10px;
+          outline-color: $color1;
+        }
+      }
+
+      button {
+        border: none;
+        transition: 0.2s;
+        margin-top: 10px;
+        font-size: 1rem;
+        text-decoration: none;
+        background: $color1;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: $white;
+
+        &:hover {
+          transform: scale(1.1);
+          color: $white;
+          box-shadow: 0 0 5px $blackShadow;
+          background: $color2;
+        }
+      }
+    }
+  }
+}
