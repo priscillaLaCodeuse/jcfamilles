@@ -7,7 +7,7 @@
 JC Familles est un site vitrine conçu pour **proposer des services d'aide à la personne**.
 
 
-Cette entreprise souhaitait un site qui puisse, **présenter ses services**. 
+Cette entreprise souhaitait un site qui puisse **présenter ses services**. 
 
 Ce projet a été développé pour l'entreprise **Jean-Claude MEZOUAR**, et il illustre ma capacité à concevoir un site moderne et dynamique.
 
